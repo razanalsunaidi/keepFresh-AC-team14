@@ -1,5 +1,5 @@
 //
-//  Place_leg.swift
+//  Place_pro.swift
 //  keepFresh
 //
 //  Created by haifa on 30/09/2024.
@@ -7,47 +7,47 @@
 
 import SwiftUI
 
-struct LegPlaceView: View {
+struct ProPlaceView: View {
     @State private var selectedAnswer: String?
     @State private var isCorrect: Bool? = nil
 
     var body: some View {
         ZStack {
-            Image("leg_time")
+            Image("pro_time")
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
 
             VStack(spacing: 16) {
-                Text("Where to store hummus?")
+                Text("Where to store frozen fish?")
                     .font(.headline)
                     .fontWeight(.bold)
                     .padding()
-
-                Image("hummus")
+                
+                Image("fish")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 200)
 
-                // Button for Refrigerator
+                // Button for Freezer (correct answer)
                 Button(action: {
-                    checkAnswer("Refrigerator")
+                    checkAnswer("Freezer")
                 }) {
-                    Text("Refrigerator")
+                    Text("Freezer")
                         .frame(width: 200, height: 50)
-                        .background(Color("brownBtn"))
+                        .background(Color("RedBtn"))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
                 .buttonStyle(PlainButtonStyle())
 
-                // Button for Pantry (correct answer)
+                // Button for Pantry
                 Button(action: {
                     checkAnswer("Pantry")
                 }) {
                     Text("Pantry")
                         .frame(width: 200, height: 50)
-                        .background(Color("brownBtn"))
+                        .background(Color("RedBtn"))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
@@ -59,7 +59,7 @@ struct LegPlaceView: View {
                 }) {
                     Text("Countertop")
                         .frame(width: 200, height: 50)
-                        .background(Color("brownBtn"))
+                        .background(Color("RedBtn"))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
@@ -80,13 +80,13 @@ struct LegPlaceView: View {
     // Function to check the answer
     private func checkAnswer(_ answer: String) {
         selectedAnswer = answer
-        isCorrect = (answer == "Pantry") // Check if the answer is "Pantry"
+        isCorrect = (answer == "Freezer") // Check if the answer is "Freezer"
     }
 }
 
-struct LegPlaceView_Preview: PreviewProvider {
+struct ProPlaceView_Preview: PreviewProvider {
     static var previews: some View {
-        LegPlaceView()
+        ProPlaceView()
             .previewDevice("iPhone 15 Pro")
     }
 }

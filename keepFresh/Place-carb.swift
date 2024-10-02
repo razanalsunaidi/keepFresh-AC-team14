@@ -1,5 +1,5 @@
 //
-//  Place_leg.swift
+//  Time-carb.swift
 //  keepFresh
 //
 //  Created by haifa on 30/09/2024.
@@ -7,24 +7,24 @@
 
 import SwiftUI
 
-struct LegPlaceView: View {
+struct CarbPlaceView: View {
     @State private var selectedAnswer: String?
     @State private var isCorrect: Bool? = nil
 
     var body: some View {
         ZStack {
-            Image("leg_time")
+            Image("carb_time")
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
 
             VStack(spacing: 16) {
-                Text("Where to store hummus?")
+                Text("Where to store rice?")
                     .font(.headline)
                     .fontWeight(.bold)
                     .padding()
 
-                Image("hummus")
+                Image("rice")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 200)
@@ -84,9 +84,8 @@ struct LegPlaceView: View {
     }
 }
 
-struct LegPlaceView_Preview: PreviewProvider {
+struct CarbPlaceView_Preview: PreviewProvider {
     static var previews: some View {
-        LegPlaceView()
-            .previewDevice("iPhone 15 Pro")
+        CarbPlaceView()
     }
 }
