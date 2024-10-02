@@ -14,6 +14,11 @@
 		6669B9712CA988C900F4EE94 /* keepFreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669B9702CA988C900F4EE94 /* keepFreshTests.swift */; };
 		6669B97B2CA988C900F4EE94 /* keepFreshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669B97A2CA988C900F4EE94 /* keepFreshUITests.swift */; };
 		6669B97D2CA988C900F4EE94 /* keepFreshUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669B97C2CA988C900F4EE94 /* keepFreshUITestsLaunchTests.swift */; };
+		A5BECA412CAAE5B10067DA46 /* Place-carb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BECA402CAAE5B10067DA46 /* Place-carb.swift */; };
+		A5BECA452CAAEF1E0067DA46 /* Place_pro.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BECA442CAAEF1E0067DA46 /* Place_pro.swift */; };
+		A5BECA472CAAF01B0067DA46 /* Place_leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BECA462CAAF01B0067DA46 /* Place_leg.swift */; };
+		A5BECA492CAAF0AE0067DA46 /* Place_veg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BECA482CAAF0AE0067DA46 /* Place_veg.swift */; };
+		A5BECA4B2CAAF1510067DA46 /* Place_dairy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BECA4A2CAAF1510067DA46 /* Place_dairy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		6669B9762CA988C900F4EE94 /* keepFreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keepFreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6669B97A2CA988C900F4EE94 /* keepFreshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keepFreshUITests.swift; sourceTree = "<group>"; };
 		6669B97C2CA988C900F4EE94 /* keepFreshUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keepFreshUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A5BECA402CAAE5B10067DA46 /* Place-carb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place-carb.swift"; sourceTree = "<group>"; };
+		A5BECA442CAAEF1E0067DA46 /* Place_pro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place_pro.swift; sourceTree = "<group>"; };
+		A5BECA462CAAF01B0067DA46 /* Place_leg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place_leg.swift; sourceTree = "<group>"; };
+		A5BECA482CAAF0AE0067DA46 /* Place_veg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place_veg.swift; sourceTree = "<group>"; };
+		A5BECA4A2CAAF1510067DA46 /* Place_dairy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place_dairy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,13 @@
 		6669B95E2CA988C800F4EE94 /* keepFresh */ = {
 			isa = PBXGroup;
 			children = (
-				6669B95F2CA988C800F4EE94 /* keepFreshApp.swift */,
 				6669B9612CA988C800F4EE94 /* ContentView.swift */,
+				6669B95F2CA988C800F4EE94 /* keepFreshApp.swift */,
+				A5BECA402CAAE5B10067DA46 /* Place-carb.swift */,
+				A5BECA442CAAEF1E0067DA46 /* Place_pro.swift */,
+				A5BECA462CAAF01B0067DA46 /* Place_leg.swift */,
+				A5BECA482CAAF0AE0067DA46 /* Place_veg.swift */,
+				A5BECA4A2CAAF1510067DA46 /* Place_dairy.swift */,
 				6669B9632CA988C900F4EE94 /* Assets.xcassets */,
 				6669B9652CA988C900F4EE94 /* Preview Content */,
 			);
@@ -257,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BECA492CAAF0AE0067DA46 /* Place_veg.swift in Sources */,
 				6669B9622CA988C800F4EE94 /* ContentView.swift in Sources */,
+				A5BECA412CAAE5B10067DA46 /* Place-carb.swift in Sources */,
 				6669B9602CA988C800F4EE94 /* keepFreshApp.swift in Sources */,
+				A5BECA472CAAF01B0067DA46 /* Place_leg.swift in Sources */,
+				A5BECA452CAAEF1E0067DA46 /* Place_pro.swift in Sources */,
+				A5BECA4B2CAAF1510067DA46 /* Place_dairy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
